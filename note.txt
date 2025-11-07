@@ -1,0 +1,161 @@
+BASIC SCRIPTING COMMANDS
+========================
+
+SHELL/BASH BASICS:
+------------------
+# Comments
+# This is a comment
+
+# Variables
+name="value"
+age=25
+echo $name
+
+# Input/Output
+echo "Hello World"          # Print to console
+read variable              # Read user input
+cat file.txt               # Display file contents
+
+# Conditionals
+if [ condition ]; then
+    echo "True"
+else
+    echo "False"
+fi
+
+# Loops
+for i in 1 2 3; do
+    echo $i
+done
+
+while [ condition ]; do
+    echo "Running"
+done
+
+# Functions
+function_name() {
+    echo "Function body"
+}
+function_name              # Call function
+
+
+PYTHON BASICS:
+--------------
+# Comments
+# This is a comment
+
+# Variables
+name = "value"
+age = 25
+print(name)
+
+# Input/Output
+print("Hello World")       # Print to console
+input("Enter: ")           # Read user input
+open("file.txt").read()    # Read file
+
+# Conditionals
+if condition:
+    print("True")
+else:
+    print("False")
+
+# Loops
+for i in [1, 2, 3]:
+    print(i)
+
+while condition:
+    print("Running")
+
+# Functions
+def function_name():
+    print("Function body")
+    
+function_name()            # Call function
+
+# Lists and Dictionaries
+my_list = [1, 2, 3]
+my_dict = {"key": "value"}
+
+
+COMMON FILE OPERATIONS:
+-----------------------
+# List files
+ls                         # Linux/Mac
+dir                        # Windows
+
+# Create directory
+mkdir folder_name
+
+# Copy file
+cp source.txt dest.txt     # Linux/Mac
+copy source.txt dest.txt   # Windows
+
+# Remove file
+rm file.txt                # Linux/Mac
+del file.txt               # Windows
+
+# Move/Rename
+mv old.txt new.txt         # Linux/Mac
+move old.txt new.txt       # Windows
+
+# Change directory
+cd /path/to/directory
+
+# Current directory
+pwd                        # Linux/Mac
+cd                         # Windows
+
+
+COMMON OPERATORS:
+-----------------
+# Arithmetic
++, -, *, /, %, **
+
+# Comparison
+==, !=, <, >, <=, >=
+
+# Logical
+&&, ||, !  (Bash)
+and, or, not  (Python)
+
+# String operations
+Concatenation: "str1" + "str2"
+Length: ${#var} (Bash) or len(var) (Python)
+
+
+USEFUL SHORTCUTS:
+-----------------
+# Execute script
+bash script.sh
+python script.py
+
+# Make executable (Linux/Mac)
+chmod +x script.sh
+./script.sh
+
+# Pipe operator (pass output as input)
+cat file.txt | grep "search_term"
+
+# Redirect output
+command > file.txt         # Overwrite
+command >> file.txt        # Append
+
+
+DEBUGGING TIPS:
+---------------
+# Print variables
+echo $variable             # Bash
+print(variable)            # Python
+
+# Check script syntax
+bash -n script.sh          # Bash
+
+# Run with debugging
+bash -x script.sh          # Bash with trace
+
+# Try-Except (error handling)
+try:
+    code
+except Exception:
+    handle error
