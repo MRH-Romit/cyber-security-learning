@@ -6,14 +6,12 @@ def generate_random_ip():
 
 def check_firewall_rules(ip, rules):
     """Checks if an IP is in the firewall rules."""
-    # .get(ip, "ALLOW") means: find the 'ip' in the 'rules' dict.
-    # If you find it, return its value (e.g., "block").
-    # If you don't find it, return the default value "ALLOW".
+
     action = rules.get(ip, "ALLOW")
     return action
 
 def main():
-    # These are the firewall rules. Any IP not in this list is allowed.
+
     firewall_rules = {
         "192.168.1.1": "block",
         "192.168.1.4": "block",

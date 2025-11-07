@@ -5,7 +5,7 @@ from collections import defaultdict
 from scapy.all import sniff, IP
 
 THRESHOLD = 40
-BLOCK_DURATION = 300  # Block for 300 seconds (5 minutes)
+BLOCK_DURATION = 300  
 print(f"THRESHOLD: {THRESHOLD}")
 
 packet_count = defaultdict(int)
@@ -20,7 +20,7 @@ def packet_callback(packet):
         current_time = time.time()
         time_interval = current_time - start_time[0]
         
-        # Check for unblocking old IPs first
+
         if time_interval > 1:
             unblock_old_ips()
 
@@ -45,8 +45,7 @@ def unblock_old_ips():
         print(f"Unblocking IP: {ip}")
         os.system(f"iptables -D INPUT -s {ip} -j DROP")
         del blocked_ips[ip]
-        # Also remove from time tracking if you have it
-        # del blocked_ips_time[ip] 
+
 
 if __name__ == "__main__":
     if os.geteuid() != 0:
@@ -55,7 +54,7 @@ if __name__ == "__main__":
 
     packet_count = defaultdict(int)
     blocked_ips = set()
-    blocked_ips_time = {} # Use this dict to track time
+    blocked_ips_time = {} 
     start_time[0] = time.time()
 
     print("Starting DoS attack detection...")
