@@ -1,0 +1,8 @@
+{
+    "INFO": 2,
+    "WARNING": 1,
+    "ERROR": 2,
+    "suspicious_ips": [
+        "10.0.0.5"
+    ]
+}

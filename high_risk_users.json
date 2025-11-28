@@ -1,0 +1,14 @@
+[
+    {
+        "id": "102",
+        "username": "admin_dave",
+        "role": "admin",
+        "status": "active"
+    },
+    {
+        "id": "104",
+        "username": "root_backup",
+        "role": "superadmin",
+        "status": "active"
+    }
+]

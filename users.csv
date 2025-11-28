@@ -1,0 +1,6 @@
+id,username,role,status
+101,jdoe,user,active
+102,admin_dave,admin,active
+103,guest,guest,inactive
+104,root_backup,superadmin,active
+105,sarah,user,active
