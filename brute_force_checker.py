@@ -1,10 +1,10 @@
-# Simulating a log file (List of strings)
+
 logs = [
     "Login failed from 192.168.1.5",
     "Login success from 192.168.1.10",
     "Login failed from 192.168.1.5",
-    "Login failed from 192.168.1.5", # 3rd time
-    "Login failed from 192.168.1.5", # 4th time (Should Alert)
+    "Login failed from 192.168.1.5", 
+    "Login failed from 192.168.1.5", 
 ]
 
 failed_counts = {} 

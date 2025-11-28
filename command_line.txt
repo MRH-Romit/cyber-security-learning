@@ -1,0 +1,73 @@
+📂 File System & Navigation
+
+    *** ls -la : List ALL files (including hidden ones like .git or .env) with permissions.
+
+ls : Simple list of files.
+
+cd : Change directory (Move folders).
+
+pwd : Show current path (Where am I?).
+
+mkdir : Create a new folder.
+
+*** rm -rf : Force delete a directory and everything inside it (Dangerous!).
+
+cp : Copy files.
+
+mv : Move or Rename files.
+
+📝 Reading & Editing Files
+
+    *** tail -f : Follow a log file in real-time (Crucial for watching logs!).
+
+cat : Print the whole file content.
+
+less : View large files with scrolling (good for huge logs).
+
+head : View just the first 10 lines.
+
+*** grep -R "pattern" : Search for a specific word inside all files in a folder.
+
+🔒 Permissions & Users (Security)
+
+    *** chmod +x : Make a script executable (Run your Python/Bash scripts).
+
+*** chmod 600 : Secure permissions for SSH keys (Only owner can read).
+
+chown user:group : Change who owns the file.
+
+*** sudo : Run as Superuser (Admin/Root).
+
+whoami : Show which user you are currently logged in as.
+
+⚙️ Processes & Services
+
+    *** ps aux : Show all running processes.
+
+top / htop : Real-time CPU/RAM monitor.
+
+*** kill -9 : Force kill a frozen process.
+
+*** systemctl status : Check if a service (like Wazuh or Nginx) is running.
+
+systemctl restart : Restart a service (to apply config changes).
+
+journalctl -xe : View detailed system error logs.
+
+🌐 Networking (The "ShadowTracer" Toolkit)
+
+    *** ip a : Show your IP address and interfaces.
+
+ping : Test connectivity to a server.
+
+*** curl : Test APIs or download files from the terminal.
+
+*** netstat -tulpn : Show which ports are OPEN and listening.
+
+*** nmap : Scan a network for open ports/devices (Hacker tool).
+
+*** ufw status : Check if the Firewall is ON or OFF.
+
+🛡️ Checksums (Integrity)
+
+    *** sha256sum : Check if a downloaded file has been tampered with.
