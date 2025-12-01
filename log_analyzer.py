@@ -1,10 +1,10 @@
-import json # Importing library to handle JSON 
+import json 
 
 def parse_logs(file_path):
     """
     Reads a log file and counts event types.
     """
-    # Initialize counters (Variables/Dictionaries) [cite: 242]
+   
     stats = {
         "INFO": 0,
         "WARNING": 0,
@@ -17,11 +17,11 @@ def parse_logs(file_path):
         with open(file_path, 'r') as file:
             print(f"--- Scanning {file_path} ---")
             
-            # Loop through each line [cite: 242]
+           
             for line in file:
-                line = line.strip() # Clean whitespace
+                line = line.strip() 
                 
-                # Check for keywords (Basic String Parsing)
+             
                 if "[ERROR]" in line:
                     stats["ERROR"] += 1
                     print(f"🚨 ALERT FOUND: {line}")
